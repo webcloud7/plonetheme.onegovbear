@@ -8,7 +8,7 @@ $searchbox-width: 295px;
   $searchbox-width);
 
 
-.portal-searchbox-wrapper {
+.portal-searchbox-wrapper, .portal-searchbox-wrapper-inner{
 
   float: left;
   width: $searchbox-width;
@@ -59,6 +59,19 @@ $searchbox-width: 295px;
       box-shadow: none;
       line-height: 1.3em;
     }
+  }
+}
+
+.portal-searchbox-wrapper-inner {
+  float: none;
+  width: 100%;
+  margin: 0;
+
+    & input.searchButton {
+      @include hidden-structure();
+    }
+  #searchGadgetInline {
+    width: 100%;
   }
 }
 
