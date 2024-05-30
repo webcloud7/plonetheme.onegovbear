@@ -15,30 +15,19 @@ $searchbox-width: 295px;
   padding: 6px;
   box-sizing: border-box;
   margin-left: -$searchbox-width;
-  display: none;
+  display: block;
+  position: fixed;
+  margin-left: 0;
   z-index: 1;
   right: 0;
   height: 52px;
   top: 54px;
 
-  @include screen-small {
-    &.open {
-      top: $mobile-menu-height;
-    }
-  }
-
   @include screen-large {
     display: block;
-    &.open {
-      position: static !important;
-      margin-left: -$searchbox-width !important;
-    }
-  }
-
-  &.open {
-    display: block;
-    position: fixed;
-    margin-left: 0;
+    position: relative;
+    margin-left: auto;
+    margin-left: -$searchbox-width;
   }
 
   #portal-searchbox {

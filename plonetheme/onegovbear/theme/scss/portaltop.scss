@@ -6,7 +6,7 @@ $portal-top-bg-color: $page-bg-color !default;
 #portal-top-wrapper {
 
   ~ #container {
-    margin-top: $size-mobile-button;
+    margin-top: calc(#{$size-mobile-button} + 60px);  // 60px heigh of search bar
   }
 
   @include screen-large {
