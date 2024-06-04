@@ -55,6 +55,11 @@ $searchbox-width: 295px;
   float: none;
   width: 100%;
   margin: 0;
+  display: block !important;
+  position: relative !important;
+  margin-left: auto !important;
+  top: 0px !important;
+
 
     & input.searchButton {
       @include hidden-structure();
